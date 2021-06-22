@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="main-title">
+          <h1 class="title">calc</h1>
+        </div>
+        <div class="themes">
+          <h3 class="theme">THEME</h3>
+          <div class="toggle">
+            <div class="toggle-num">
+              <p class="">1</p>
+              <p class="num">2</p>
+              <p class="num">3</p>
+            </div>
+            <div class="switch-toggle switch-3 switch-candy">
+              <input
+                id="theme-one"
+                name="state-d"
+                type="radio"
+                checked="checked"
+              />
+              <label for="one" class="red-button" onclick=""></label>
+
+              <input id="theme-two" name="state-d" type="radio" />
+              <label for="two" class="red-button" onclick="">&nbsp;</label>
+
+              <input id="theme-three" name="state-d" type="radio" />
+              <label for="three" class="red-button" onclick=""></label>
+
+              <a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-area">
+        <input type="text" name="display" id="display" disabled value="0" />
+      </div>
+      <div class="button-table">
+        <button class="numbers" id="seven">7</button>
+        <button class="numbers" id="eight">8</button>
+        <button class="numbers" id="nine">9</button>
+        <button class="numbers doubles" id="delete">DEL</button>
+        <button class="numbers" id="four">4</button>
+        <button class="numbers" id="five">5</button>
+        <button class="numbers" id="six">6</button>
+        <button class="numbers" id="add">+</button>
+        <button class="numbers" id="one">1</button>
+        <button class="numbers" id="two">2</button>
+        <button class="numbers" id="three">3</button>
+        <button class="numbers" id="minus">-</button>
+        <button class="numbers" id="decimal">.</button>
+        <button class="numbers" id="zero">0</button>
+        <button class="numbers" id="divide">/</button>
+        <button class="numbers" id="multiply">x</button>
+
+        <button class="reset doubles" id="reset">RESET</button>
+        <button class="equal doubles" id="equal">=</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Carter Stevens</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
