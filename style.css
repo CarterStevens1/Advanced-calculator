@@ -85,7 +85,40 @@ body {
 .switch-toggle {
   background-color: #182034;
   border-radius: 20px;
-  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custom-radio-btn {
+  width: 100%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.custom-radio-btn .checkmark {
+  width: calc(100% - 6px);
+  height: calc(120% - 6px);
+  border-radius: 50%;
+  background-color: #d03f2f;
+  display: none;
+}
+
+.custom-radio-btn input {
+  display: none;
+}
+
+.custom-radio-btn input:checked + .checkmark {
+  display: inline-block;
 }
 
 #display,
