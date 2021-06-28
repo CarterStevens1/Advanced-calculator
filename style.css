@@ -9,6 +9,10 @@ body {
   background-color: #3a4764;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;

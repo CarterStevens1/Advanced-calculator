@@ -66,28 +66,34 @@
         </div>
       </div>
       <div class="input-area">
-        <input type="text" name="display" id="display" disabled value="0" />
+        <input
+          class="display"
+          type="text"
+          name="display"
+          id="display"
+          disabled
+        />
       </div>
       <div class="button-table">
-        <button class="numbers" id="seven">7</button>
-        <button class="numbers" id="eight">8</button>
-        <button class="numbers" id="nine">9</button>
-        <button class="numbers doubles" id="delete">DEL</button>
-        <button class="numbers" id="four">4</button>
-        <button class="numbers" id="five">5</button>
-        <button class="numbers" id="six">6</button>
-        <button class="numbers" id="add">+</button>
-        <button class="numbers" id="one">1</button>
-        <button class="numbers" id="two">2</button>
-        <button class="numbers" id="three">3</button>
-        <button class="numbers" id="minus">-</button>
-        <button class="numbers" id="decimal">.</button>
-        <button class="numbers" id="zero">0</button>
-        <button class="numbers" id="divide">/</button>
-        <button class="numbers" id="multiply">x</button>
+        <button type="button" class="numbers" value="7">7</button>
+        <button class="numbers" value="8">8</button>
+        <button class="numbers" value="9">9</button>
+        <button class="deleteD numbers doubles" value="">DEL</button>
+        <button class="numbers" value="4">4</button>
+        <button class="numbers" value="5">5</button>
+        <button class="numbers" value="6">6</button>
+        <button class="numbers operator" value="+">+</button>
+        <button class="numbers" value="1">1</button>
+        <button class="numbers" value="2">2</button>
+        <button class="numbers" value="3">3</button>
+        <button class="numbers operator" value="-">-</button>
+        <button class="numbers digit decimal" value=".">.</button>
+        <button class="numbers" value="0">0</button>
+        <button class="numbers operator" value="/">&divide;</button>
+        <button class="numbers operator" value="x">&times;</button>
 
-        <button class="reset doubles" id="reset">RESET</button>
-        <button class="equal doubles" id="equal">=</button>
+        <button class="all-clear reset doubles" value="all-clear">RESET</button>
+        <button class="operator equal doubles" value="=">=</button>
       </div>
     </div>
 
