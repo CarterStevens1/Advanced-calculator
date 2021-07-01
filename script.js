@@ -15,11 +15,11 @@ let theme01 = {
 };
 let theme02 = {
   colorPrimary: "hsl(0, 0%, 90%)",
-  $colorScreen: "hsl(0, 0%, 93%)",
+  colorScreen: "hsl(0, 0%, 93%)",
   colorKeybackground: "hsl(0, 5%, 81%))",
   colorFunctionKey: "hsl(185, 42%, 37%))",
   colorFuntionkeyShadow: "hsl(185, 58%, 25%)",
-  $colorRedbuttons: "hsl(25, 98%, 40%)",
+  colorRedbuttons: "hsl(25, 98%, 40%)",
   colorRedbuttonsShadow: "hsl(25, 99%, 27%)",
   colorNumbers: "hsl(45, 7%, 89%)",
   colorNumbersShadow: "hsl(35, 11%, 61%)",
@@ -64,6 +64,7 @@ radios.forEach((radio) => {
         break;
       case "theme-2":
         setTheme(theme02);
+
         break;
       case "theme-3":
         setTheme(theme03);
@@ -79,10 +80,11 @@ function setTheme(theme) {
   let styleTarget = document.documentElement.style;
 
   properties.forEach((prop) => {
-    let withOutDash = prop.slice(2);
+    let withOutDash = prop.slice(1);
     styleTarget.setProperty(prop, theme[`${withOutDash}`]);
   });
 }
+console.log(setTheme());
 
 const calculator = {
   displaysValue: "0",
